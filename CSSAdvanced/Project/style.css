@@ -16,6 +16,46 @@ h1 {
 
 footer {
   text-align: right;
+  clear: both;
   color: midnightblue;
 }
 
+.creative {
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .left, .right {
+    float: none;
+    width: 100%;
+  }
+}
