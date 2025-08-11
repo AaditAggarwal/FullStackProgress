@@ -19,6 +19,7 @@ var allListItems = document.querySelectorAll("#list li"); // Gets all list items
 var link = document.querySelector("#list a");
 link.style.color = "red";
 
+// manipulate classes of html elements
 document.querySelector("button").classList.add("invisble");
 
 document.querySelector("button").classList.remove("invisble");
@@ -26,3 +27,13 @@ document.querySelector("button").classList.remove("invisble");
 document.querySelector("button").classList.toggle("visible");
 
 document.querySelector("h1").classList.toggle("huge");
+
+// correctly manipulate innerHTML/textContent
+document.querySelector("h1").innerHTML = "<em>Goodbye!</em>";
+
+document.querySelector("h1").textContent;
+
+// manipulate html element attributes
+document.querySelector("a").attributes;
+document.querySelector("a").getAttribute("href");
+document.querySelector("a").setAttribute("href", "https://www.bing.com");
